@@ -1,12 +1,12 @@
 "use client"
 
-import { Phone, MessageCircle, Shield, Heart, Brain, Users, MapPin, Award, BookOpen, Sprout } from "lucide-react"
+import { Phone, MessageCircle, Users, Brain, Heart, Shield, Award, BookOpen, MapPin, Clock, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function AnkurMentalHealth() {
-  const whatsappNumber = "919869378751" // Indian WhatsApp number format
+  const whatsappNumber = "919869378751"
   const phoneNumber = "+91-98693-78751"
 
   const handleWhatsAppClick = () => {
@@ -26,13 +26,19 @@ export default function AnkurMentalHealth() {
       <header className="bg-white shadow-sm border-b border-orange-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
+            {/* Logo */}
             <div className="flex items-center space-x-3">
-              <Sprout className="h-8 w-8 text-orange-600" />
+              <img
+                src="/images/ankur-logo.png"
+                alt="Ankur Mental Health Services Logo"
+                className="h-12 w-12 object-contain"
+              />
               <div>
                 <span className="text-2xl font-bold text-gray-900">Ankur</span>
                 <p className="text-sm text-orange-600 font-medium">Mental Health Services</p>
               </div>
             </div>
+
             <nav className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-700 hover:text-orange-600 transition-colors">
                 About
@@ -40,13 +46,14 @@ export default function AnkurMentalHealth() {
               <a href="#services" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Services
               </a>
-              <a href="#training" className="text-gray-700 hover:text-orange-600 transition-colors">
-                Training
+              <a href="#conditions" className="text-gray-700 hover:text-orange-600 transition-colors">
+                Conditions
               </a>
               <a href="#contact" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Contact
               </a>
             </nav>
+
             <div className="flex space-x-2">
               <Button onClick={handleWhatsAppClick} className="bg-orange-600 hover:bg-orange-700">
                 <MessageCircle className="h-4 w-4 mr-2" />
@@ -71,26 +78,24 @@ export default function AnkurMentalHealth() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Sprout className="h-6 w-6 text-orange-600" />
-                <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100">
-                  Every Individual Holds the Potential to Heal & Grow
-                </Badge>
+                <img src="/images/ankur-logo.png" alt="Ankur Logo" className="h-8 w-8 object-contain" />
+                <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100">Heal. Nurture. Grow.</Badge>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Nurturing Growth, One Sprout at a Time
+                Mental Health Care as Human as it is Professional
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                At Ankur, we create a therapeutic space that is grounded, collaborative, and deeply respectful of your
-                unique journey. Led by Mrudula Joshi, Clinical Psychologist with 13+ years of experience.
+                At Ankur, we believe that mental health care must be grounded in empathy, guided by evidence, and
+                attuned to the diverse experiences that shape our emotional lives.
               </p>
               <div className="flex items-center space-x-4 mb-8">
                 <div className="flex items-center space-x-1">
                   <Award className="h-5 w-5 text-orange-600" />
-                  <span className="text-sm font-medium text-gray-700">Research Paper Award Winner</span>
+                  <span className="text-sm font-medium text-gray-700">13+ Years Experience</span>
                 </div>
                 <div className="flex items-center space-x-1">
                   <Shield className="h-5 w-5 text-orange-600" />
-                  <span className="text-sm font-medium text-gray-700">Suicide Prevention Expert</span>
+                  <span className="text-sm font-medium text-gray-700">Evidence-Based Care</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -100,7 +105,7 @@ export default function AnkurMentalHealth() {
                   className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3"
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
-                  Book via WhatsApp
+                  Book Consultation
                 </Button>
                 <Button
                   onClick={handleCallClick}
@@ -109,29 +114,29 @@ export default function AnkurMentalHealth() {
                   className="border-orange-600 text-orange-600 hover:bg-orange-50 text-lg px-8 py-3 bg-transparent"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  Call: 98693-78751
+                  Call: 9869378751
                 </Button>
               </div>
             </div>
             <div className="relative">
               <img
                 src="/placeholder.svg?height=600&width=500"
-                alt="Mrudula Joshi - Clinical Psychologist at Ankur Mental Health Services"
+                alt="Mental Health Support - Ankur Services"
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-orange-200">
                 <div className="flex items-center space-x-2 mb-2">
-                  <Sprout className="h-6 w-6 text-orange-600" />
-                  <span className="font-bold text-orange-600">13+ Years</span>
+                  <Users className="h-6 w-6 text-orange-600" />
+                  <span className="font-bold text-orange-600">Multidisciplinary Team</span>
                 </div>
-                <p className="text-sm text-gray-600">Clinical Experience</p>
+                <p className="text-sm text-gray-600">Comprehensive Care</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Contact Bar */}
+      {/* Quick Stats Bar */}
       <section className="bg-gradient-to-r from-orange-600 to-amber-600 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-white">
@@ -141,8 +146,8 @@ export default function AnkurMentalHealth() {
                 <span>Mumbai & Thane Locations</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Award className="h-5 w-5" />
-                <span>REBT & Play Therapy Certified</span>
+                <Clock className="h-5 w-5" />
+                <span>Flexible Scheduling</span>
               </div>
             </div>
             <div className="flex space-x-4">
@@ -162,80 +167,145 @@ export default function AnkurMentalHealth() {
                 className="border-white text-white hover:bg-white hover:text-orange-600 bg-transparent"
               >
                 <Phone className="h-4 w-4 mr-2" />
-                Call Now
+                Emergency Call
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - OLIVE GREEN ACCENT */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Meet Mrudula Joshi</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About Ankur Mental Health Services</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Clinical Psychologist | Psychotherapist | Trainer | Suicide Prevention Expert | Research Paper Award
-              Winner
+              We exist for one purpose: to support individuals, families, and communities in navigating life's emotional
+              landscapes with clarity, compassion, and courage.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">What Ankur Stands For</h3>
-              <div className="flex items-center space-x-3 mb-4">
-                <Sprout className="h-8 w-8 text-orange-600" />
+          {/* Our Story */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <p className="font-semibold text-lg">"Ankur" means sprout</p>
-                  <p className="text-gray-600">A symbol of life, new beginnings, and resilience</p>
+                  <p className="text-gray-700 mb-4 leading-relaxed">
+                    The word "Ankur" means sprout — a symbol of new beginnings, quiet resilience, and the potential for
+                    growth even in unlikely soil. This metaphor captures what we offer at Ankur: the space and support
+                    to heal at your own pace, in your own way, with professional guidance you can trust.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Ankur was born from years of working with children, adolescents, families, and adults navigating
+                    emotional difficulties, school pressures, trauma, life transitions, grief, parenting fatigue, and
+                    mental illness. Over time, it became clear that people don't just need answers — they need
+                    connection, clarity, containment, and a space where they are truly heard.
+                  </p>
                 </div>
-              </div>
-              <p className="text-gray-600 mb-6">
-                We honour each person's journey toward clarity and growth with mindful listening, science-backed
-                strategies, and a space where healing is not rushed but nurtured.
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                  <span className="text-gray-700">Person-centered and collaborative</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                  <span className="text-gray-700">Rooted in psychological science</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                  <span className="text-gray-700">Culturally sensitive and age-appropriate</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                  <span className="text-gray-700">Structured yet flexible to individual needs</span>
+                <div className="flex justify-center">
+                  <img
+                    src="/images/ankur-logo.png"
+                    alt="Ankur - Growth and Healing"
+                    className="h-48 w-48 object-contain"
+                  />
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl">
-              <h4 className="text-xl font-bold text-gray-900 mb-4">Areas of Expertise</h4>
-              <div className="grid grid-cols-1 gap-3">
-                <div className="flex items-center space-x-2">
-                  <Heart className="h-5 w-5 text-orange-600" />
-                  <span className="text-gray-700">Therapy for children, teens, adults, couples & families</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Brain className="h-5 w-5 text-orange-600" />
-                  <span className="text-gray-700">Psychological assessments (IQ, LD, ADHD, Autism)</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Shield className="h-5 w-5 text-orange-600" />
-                  <span className="text-gray-700">Suicide prevention & crisis interventions</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Users className="h-5 w-5 text-orange-600" />
-                  <span className="text-gray-700">Supervision & mentoring for psychologists</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <BookOpen className="h-5 w-5 text-orange-600" />
-                  <span className="text-gray-700">Training modules for schools & workplaces</span>
-                </div>
+          </div>
+
+          {/* Founder Section - OLIVE GREEN ACCENT */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-2xl p-8">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Founded by Mrudula Joshi</h3>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">
+                  Clinical Psychologist | Psychotherapist | Trainer | Suicide Prevention Expert
+                </h4>
+                <p className="text-green-700 font-medium mb-4">
+                  Over 13 years of experience in therapy, assessment, training, and suicide prevention
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Ankur brings together a multidisciplinary team of skilled professionals — including therapists,
+                  psychiatrists, special educators, and mental health trainers — all committed to offering accessible,
+                  ethical, and culturally sensitive care.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Values - OLIVE GREEN ACCENT */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Our Values</h3>
+            <div className="space-y-6">
+              {/* Top row - 3 cards */}
+              <div className="grid md:grid-cols-3 gap-6">
+                <Card className="border-orange-200">
+                  <CardHeader>
+                    <Shield className="h-8 w-8 text-orange-600 mb-2" />
+                    <CardTitle className="text-orange-700">Safety First</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      A therapeutic relationship is sacred. We protect client confidentiality and emotional safety at
+                      all times.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
+                  <CardHeader>
+                    <Heart className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
+                    <CardTitle style={{ color: "#4e6137" }}>Depth Over Quick Fixes</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      We avoid symptom-hunting and focus instead on sustainable psychological well-being.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-orange-200">
+                  <CardHeader>
+                    <Brain className="h-8 w-8 text-orange-600 mb-2" />
+                    <CardTitle className="text-orange-700">Rooted & Evolving</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      We stay informed by research, while remaining sensitive to the evolving needs of individuals and
+                      communities.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Bottom row - 2 cards centered */}
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <Card style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
+                  <CardHeader>
+                    <Award className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
+                    <CardTitle style={{ color: "#4e6137" }}>Empowerment through Insight</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      Whether you're a parent, professional, or young adult, we believe that insight and clarity lead to
+                      agency.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-orange-200">
+                  <CardHeader>
+                    <Users className="h-8 w-8 text-orange-600 mb-2" />
+                    <CardTitle className="text-orange-700">Mental Health for All</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      We are committed to mental health awareness, inclusion, and reducing stigma — one conversation at
+                      a time.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
@@ -243,129 +313,31 @@ export default function AnkurMentalHealth() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#f8faf7" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600">
-              Your well-being deserves care that is clear, compassionate, and evidence-informed
-            </p>
+            <p className="text-xl text-gray-600">Comprehensive. Personalised. Rooted in Care.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Therapy & Counselling */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Individual Therapy */}
             <Card className="border-orange-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-orange-700 flex items-center">
-                  <Heart className="h-6 w-6 mr-2" />
-                  Therapy & Counselling
-                </CardTitle>
+                <Heart className="h-8 w-8 text-orange-600 mb-2" />
+                <CardTitle className="text-orange-700">Individual Therapy</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Children & Adolescents</h4>
-                    <p className="text-gray-600 text-sm">
-                      Managing attention, emotions, school challenges, and developmental concerns
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Adults</h4>
-                    <p className="text-gray-600 text-sm">
-                      Supporting mental health across stress, anxiety, depression, grief, and life transitions
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Couples & Families</h4>
-                    <p className="text-gray-600 text-sm">
-                      Restoring connection, resolving conflict, and strengthening communication
-                    </p>
-                  </div>
-                  <div className="flex space-x-2 pt-4">
-                    <Button
-                      onClick={handleWhatsAppClick}
-                      size="sm"
-                      className="bg-orange-600 hover:bg-orange-700 flex-1"
-                    >
-                      <MessageCircle className="h-4 w-4 mr-1" />
-                      WhatsApp
-                    </Button>
-                    <Button
-                      onClick={handleCallClick}
-                      size="sm"
-                      variant="outline"
-                      className="border-orange-600 text-orange-600 hover:bg-orange-50 flex-1 bg-transparent"
-                    >
-                      <Phone className="h-4 w-4 mr-1" />
-                      Call
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Psychological Assessments */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-orange-700 flex items-center">
-                  <Brain className="h-6 w-6 mr-2" />
-                  Psychological Assessments
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Child & Adolescent Assessments</h4>
-                    <ul className="text-gray-600 text-sm space-y-1">
-                      <li>• IQ & Cognitive Assessments</li>
-                      <li>• Learning Disability (LD) Evaluation</li>
-                      <li>• ADHD Screening</li>
-                      <li>• Autism Spectrum Assessments</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Adult Assessments</h4>
-                    <ul className="text-gray-600 text-sm space-y-1">
-                      <li>• Clinical Personality Assessments</li>
-                      <li>• ADHD & Cognitive Functioning</li>
-                    </ul>
-                  </div>
-                  <div className="flex space-x-2 pt-4">
-                    <Button
-                      onClick={handleWhatsAppClick}
-                      size="sm"
-                      className="bg-orange-600 hover:bg-orange-700 flex-1"
-                    >
-                      <MessageCircle className="h-4 w-4 mr-1" />
-                      WhatsApp
-                    </Button>
-                    <Button
-                      onClick={handleCallClick}
-                      size="sm"
-                      variant="outline"
-                      className="border-orange-600 text-orange-600 hover:bg-orange-50 flex-1 bg-transparent"
-                    >
-                      <Phone className="h-4 w-4 mr-1" />
-                      Call
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Marital & Family Counselling */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-orange-700 flex items-center">
-                  <Users className="h-6 w-6 mr-2" />
-                  Marital & Family Counselling
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">
-                  Whether you're navigating communication issues, parenting stress, or generational conflict — our
-                  counselling services help create a respectful space to rebuild trust and shared understanding.
+                <p className="text-gray-700 mb-4">
+                  For children, adolescents, adults, and older adults, tailored to your unique emotional and
+                  psychological needs.
                 </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Anxiety, low mood, and stress</li>
+                  <li>• Trauma and grief</li>
+                  <li>• Low self-worth and self-doubt</li>
+                  <li>• Academic, career, and relationship struggles</li>
+                </ul>
                 <div className="flex space-x-2">
                   <Button onClick={handleWhatsAppClick} size="sm" className="bg-orange-600 hover:bg-orange-700 flex-1">
                     <MessageCircle className="h-4 w-4 mr-1" />
@@ -384,26 +356,76 @@ export default function AnkurMentalHealth() {
               </CardContent>
             </Card>
 
-            {/* Supervision & Mentoring */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+            {/* Child & Adolescent Support */}
+            <Card
+              className="hover:shadow-lg transition-shadow"
+              style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
+            >
               <CardHeader>
-                <CardTitle className="text-orange-700 flex items-center">
-                  <BookOpen className="h-6 w-6 mr-2" />
-                  Supervision & Mentoring
-                </CardTitle>
+                <Users className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
+                <CardTitle style={{ color: "#4e6137" }}>Child & Adolescent Support</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-3">
-                  <p className="text-gray-600">We offer supervision for:</p>
-                  <ul className="text-gray-600 space-y-1">
-                    <li>• Early-career mental health professionals</li>
-                    <li>• Trainees and interns in psychology or counselling</li>
-                  </ul>
-                  <p className="text-sm text-gray-600">
-                    Guidance focused on reflective practice, ethical clarity, and skill-building.
-                  </p>
+                <p className="text-gray-700 mb-4">
+                  We work closely with children, teens, and their families using Play Therapy and age-appropriate
+                  approaches.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Emotional regulation and behaviour management</li>
+                  <li>• School difficulties and attention issues</li>
+                  <li>• Anxiety, sleep problems, or aggression</li>
+                  <li>• Parent–child relationship concerns</li>
+                </ul>
+                <div className="flex space-x-2">
+                  <Button
+                    onClick={handleWhatsAppClick}
+                    size="sm"
+                    className="flex-1"
+                    style={{
+                      backgroundColor: "#4e6137",
+                      color: "white",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#3d4d2a")}
+                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#4e6137")}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-1" />
+                    WhatsApp
+                  </Button>
+                  <Button
+                    onClick={handleCallClick}
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                    style={{
+                      borderColor: "#4e6137",
+                      color: "#4e6137",
+                    }}
+                  >
+                    <Phone className="h-4 w-4 mr-1" />
+                    Call
+                  </Button>
                 </div>
-                <div className="flex space-x-2 pt-4">
+              </CardContent>
+            </Card>
+
+            {/* Psychological Assessments - OLIVE GREEN ACCENT */}
+            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Brain className="h-8 w-8 text-orange-600 mb-2" />
+                <CardTitle className="text-orange-700">Psychological Assessments</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 mb-4">
+                  Detailed, standardized assessments offering insights into cognitive, emotional, and behavioural
+                  functioning.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• IQ & Cognitive Profiling</li>
+                  <li>• Learning Disabilities (LD)</li>
+                  <li>• ADHD & Autism Spectrum</li>
+                  <li>• Personality Functioning</li>
+                </ul>
+                <div className="flex space-x-2">
                   <Button onClick={handleWhatsAppClick} size="sm" className="bg-orange-600 hover:bg-orange-700 flex-1">
                     <MessageCircle className="h-4 w-4 mr-1" />
                     WhatsApp
@@ -420,349 +442,291 @@ export default function AnkurMentalHealth() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Family & Marital Therapy */}
+            <Card
+              className="hover:shadow-lg transition-shadow"
+              style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
+            >
+              <CardHeader>
+                <Heart className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
+                <CardTitle style={{ color: "#4e6137" }}>Family & Marital Therapy</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 mb-4">
+                  We help families and couples navigate difficult dynamics with structure and empathy.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Parent–child or sibling conflicts</li>
+                  <li>• Marital stress and communication breakdown</li>
+                  <li>• Joint parenting of neurodivergent children</li>
+                  <li>• Post-separation co-parenting support</li>
+                </ul>
+                <div className="flex space-x-2">
+                  <Button
+                    onClick={handleWhatsAppClick}
+                    size="sm"
+                    className="flex-1"
+                    style={{
+                      backgroundColor: "#4e6137",
+                      color: "white",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#3d4d2a")}
+                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#4e6137")}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-1" />
+                    WhatsApp
+                  </Button>
+                  <Button
+                    onClick={handleCallClick}
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                    style={{
+                      borderColor: "#4e6137",
+                      color: "#4e6137",
+                    }}
+                  >
+                    <Phone className="h-4 w-4 mr-1" />
+                    Call
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Support Groups */}
+            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <Users className="h-8 w-8 text-orange-600 mb-2" />
+                <CardTitle className="text-orange-700">Support Groups</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 mb-4">
+                  Healing in community. Safe, therapist-led groups for shared healing, insight, and growth.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Anxiety and depression support</li>
+                  <li>• Grief and loss processing</li>
+                  <li>• New mothers and postpartum adjustment</li>
+                  <li>• Parents of neurodivergent children</li>
+                </ul>
+                <div className="flex space-x-2">
+                  <Button onClick={handleWhatsAppClick} size="sm" className="bg-orange-600 hover:bg-orange-700 flex-1">
+                    <MessageCircle className="h-4 w-4 mr-1" />
+                    WhatsApp
+                  </Button>
+                  <Button
+                    onClick={handleCallClick}
+                    size="sm"
+                    variant="outline"
+                    className="border-orange-600 text-orange-600 hover:bg-orange-50 flex-1 bg-transparent"
+                  >
+                    <Phone className="h-4 w-4 mr-1" />
+                    Call
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Training & Supervision - OLIVE GREEN ACCENT */}
+            <Card
+              className="hover:shadow-lg transition-shadow"
+              style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
+            >
+              <CardHeader>
+                <BookOpen className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
+                <CardTitle style={{ color: "#4e6137" }}>Training & Supervision</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 mb-4">
+                  We are committed to developing ethical and skilled mental health professionals.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                  <li>• Internships for psychology students</li>
+                  <li>• Clinical supervision for early-career professionals</li>
+                  <li>• Workshops for schools and corporates</li>
+                  <li>• Mental health and suicide prevention training</li>
+                </ul>
+                <div className="flex space-x-2">
+                  <Button
+                    onClick={handleWhatsAppClick}
+                    size="sm"
+                    className="flex-1"
+                    style={{
+                      backgroundColor: "#4e6137",
+                      color: "white",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#3d4d2a")}
+                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#4e6137")}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-1" />
+                    WhatsApp
+                  </Button>
+                  <Button
+                    onClick={handleCallClick}
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                    style={{
+                      borderColor: "#4e6137",
+                      color: "#4e6137",
+                    }}
+                  >
+                    <Phone className="h-4 w-4 mr-1" />
+                    Call
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Conditions We Support */}
+      <section id="conditions" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Client Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real stories of healing, growth, and transformation. Every journey is unique, and every step forward
-              matters.
-            </p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Conditions We Support</h2>
+            <p className="text-xl text-gray-600">Carefully assessed. Thoughtfully supported.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {/* Individual Therapy Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "After struggling with anxiety for years, I finally found the support I needed. Mrudula's REBT
-                  approach helped me understand my thought patterns and develop practical coping strategies. I feel more
-                  confident and in control of my life now."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Heart className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Anonymous Client</p>
-                    <p className="text-sm text-gray-600">Individual Therapy - Anxiety Management</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Children & Adolescents */}
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">For Children & Adolescents</h3>
 
-            {/* Child Therapy Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Neurodevelopmental Disorders</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Learning Disability (LD)</li>
+                    <li>• Attention-Deficit/Hyperactivity Disorder (ADHD)</li>
+                    <li>• Autism Spectrum-related indicators</li>
+                  </ul>
                 </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "My 8-year-old was struggling with attention issues at school. Through play therapy sessions, we saw
-                  remarkable improvement in his focus and emotional regulation. The assessment helped us understand his
-                  needs better, and now he's thriving academically."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Users className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Parent of Young Client</p>
-                    <p className="text-sm text-gray-600">Child Therapy & ADHD Assessment</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Couples Counseling Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Emotional & Behavioural Challenges</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Anxiety and fearfulness</li>
+                    <li>• Academic stress and performance anxiety</li>
+                    <li>• Aggression, irritability, or sudden withdrawal</li>
+                    <li>• Bullying (as a target or aggressor)</li>
+                    <li>• Sleep disturbances</li>
+                    <li>• Screen overuse and digital dependence</li>
+                  </ul>
                 </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "We were on the verge of separation when we decided to try couples counseling. Mrudula created a safe
-                  space for both of us to express our feelings. We learned new communication skills and rebuilt our
-                  trust. Our marriage is stronger than ever."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Heart className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Married Couple</p>
-                    <p className="text-sm text-gray-600">Couples Counseling</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Teen Therapy Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Adjustment & Family Stress</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Parent–child relationship difficulties</li>
+                    <li>• Separation, divorce, or changes in caregiving</li>
+                    <li>• Relocation, school changes, and social transition</li>
+                    <li>• Grief and loss</li>
+                  </ul>
                 </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "As a teenager dealing with depression and academic pressure, I felt lost. The therapy sessions helped
-                  me understand my emotions and develop healthy coping mechanisms. I'm now more confident and have
-                  better relationships with my family."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Sprout className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Teen Client</p>
-                    <p className="text-sm text-gray-600">Adolescent Therapy - Depression</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Family Therapy Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "Generational conflicts were tearing our family apart. Through family counseling, we learned to
-                  understand each other's perspectives and communicate more effectively. We now have regular family
-                  meetings and much better relationships."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Users className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Family of Four</p>
-                    <p className="text-sm text-gray-600">Family Counseling</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Assessment Success */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow bg-gradient-to-br from-orange-50 to-amber-50">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-orange-400 rounded-full"></div>
-                    ))}
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "The comprehensive psychological assessment provided clarity about my learning differences. The
-                  detailed report and recommendations helped me get the right accommodations at work. I finally
-                  understand why certain tasks were challenging for me."
-                </p>
-                <div className="flex items-center space-x-2">
-                  <Brain className="h-5 w-5 text-orange-600" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Working Professional</p>
-                    <p className="text-sm text-gray-600">Learning Disability Assessment</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Statistics Section */}
-          <div className="bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl p-8 text-white">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold mb-2">13+</div>
-                <p className="text-orange-100">Years of Experience</p>
               </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">500+</div>
-                <p className="text-orange-100">Lives Transformed</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">95%</div>
-                <p className="text-orange-100">Client Satisfaction</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">2</div>
-                <p className="text-orange-100">Convenient Locations</p>
+            </div>
+
+            {/* Adults */}
+            <div className="bg-white border border-orange-200 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">For Adults</h3>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Mood & Emotional Health</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Depression and low mood</li>
+                    <li>• Generalized Anxiety and worry</li>
+                    <li>• Social Anxiety</li>
+                    <li>• Obsessive-Compulsive Disorder (OCD)</li>
+                    <li>• Bipolar Disorder</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Women's Mental Health</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Premenstrual mood changes</li>
+                    <li>• Postpartum emotional challenges</li>
+                    <li>• Fertility-related distress</li>
+                    <li>• Menopause and midlife emotional adjustment</li>
+                    <li>• Caregiver stress and role fatigue</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-orange-700 mb-2">Life Transitions & Relationships</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Marriage, parenthood, retirement, relocation</li>
+                    <li>• Relationship difficulties and family communication</li>
+                    <li>• Self-worth, identity struggles</li>
+                    <li>• Grief, loss, and ambiguous loss</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="text-center mt-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Start Your Journey?</h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Join hundreds of individuals and families who have found healing, growth, and renewed hope through our
-              compassionate, evidence-based approach.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={handleWhatsAppClick}
-                size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3"
-              >
-                <MessageCircle className="h-5 w-5 mr-2" />
-                Start Your Journey via WhatsApp
-              </Button>
-              <Button
-                onClick={handleCallClick}
-                size="lg"
-                variant="outline"
-                className="border-orange-600 text-orange-600 hover:bg-orange-50 text-lg px-8 py-3 bg-transparent"
-              >
-                <Phone className="h-5 w-5 mr-2" />
-                Call for Consultation
-              </Button>
+          {/* Why Mental Health Matters */}
+          <div className="mt-16 bg-gradient-to-r from-orange-600 to-amber-600 rounded-2xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-6 text-center">Why Mental Health Matters</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl font-bold mb-2">1 in 8</div>
+                <p className="text-orange-100 text-sm">People globally live with a mental health condition (WHO)</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-2">200M+</div>
+                <p className="text-orange-100 text-sm">People in India experience mental health concerns</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-2">1.5L+</div>
+                <p className="text-orange-100 text-sm">
+                  Annual suicide deaths in India - many preventable with early support
+                </p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-2">7-10%</div>
+                <p className="text-orange-100 text-sm">School-going children show signs of emotional difficulties</p>
+              </div>
             </div>
+            <p className="text-center mt-6 text-orange-100">
+              At Ankur, we are deeply committed to breaking this cycle — by offering timely, non-judgmental, and
+              informed care that helps people heal, not hide.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Training Section */}
-      <section id="training" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* Contact Section - OLIVE GREEN ACCENT */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#f8faf7" }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Training & Internship</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Let's Begin Together</h2>
             <p className="text-xl text-gray-600">
-              Learn. Practice. Grow — with real-world skills and grounded mentorship
+              Whether you or your child are facing confusion, emotional stress, or long-term challenges — we're here to
+              help.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Train with Ankur?</h3>
-              <p className="text-gray-600 mb-8">
-                We believe professional learning should be meaningful, applicable, and supervised with intention. Our
-                programs are designed for psychology students, early-career professionals, and educators.
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-3">
-                  <Brain className="h-6 w-6 text-orange-600 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Psychological Assessment Training</h4>
-                    <p className="text-gray-600 text-sm">
-                      Learn to conduct and interpret assessments for IQ, LD, ADHD, Autism, and personality. Includes
-                      hands-on practice and report writing.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <Heart className="h-6 w-6 text-orange-600 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Therapy Skills Workshops</h4>
-                    <p className="text-gray-600 text-sm">
-                      Focused modules on REBT, Play Therapy, case conceptualization, and more.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <BookOpen className="h-6 w-6 text-orange-600 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Internships (Clinical & Applied)</h4>
-                    <p className="text-gray-600 text-sm">
-                      Get real-time exposure to therapy, assessments, documentation, and supervision.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <Users className="h-6 w-6 text-orange-600 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Supervision Circles</h4>
-                    <p className="text-gray-600 text-sm">
-                      Monthly group or one-on-one sessions for reflection, case discussion, and professional growth.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">How to Apply</h3>
-              <p className="text-gray-600 mb-6">
-                Fill the registration form or connect with us directly to explore current openings.
-              </p>
-
-              <div className="space-y-4">
-                <Button
-                  onClick={() => window.open("https://forms.gle/4r7VrAxo3bfxAL7D6", "_blank")}
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-6"
-                >
-                  <BookOpen className="h-6 w-6 mr-3" />
-                  Fill Registration Form
-                </Button>
-
-                <div className="text-center">
-                  <p className="text-gray-600 mb-4">Or contact us directly:</p>
-                  <div className="flex space-x-2">
-                    <Button onClick={handleWhatsAppClick} className="flex-1 bg-orange-600 hover:bg-orange-700">
-                      <MessageCircle className="h-4 w-4 mr-2" />
-                      WhatsApp
-                    </Button>
-                    <Button
-                      onClick={handleCallClick}
-                      variant="outline"
-                      className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent"
-                    >
-                      <Phone className="h-4 w-4 mr-2" />
-                      Call
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p className="text-xl text-gray-600">We're here to listen. Reach out to begin your journey.</p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <Phone className="h-6 w-6 text-orange-600" />
+                  <Phone className="h-6 w-6" style={{ color: "#4e6137" }} />
                   <div>
-                    <p className="font-semibold">Phone</p>
-                    <p className="text-gray-600">98693-78751</p>
+                    <p className="font-semibold">Call or WhatsApp</p>
+                    <p className="text-gray-600">9869378751</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MessageCircle className="h-6 w-6 text-orange-600" />
+                  <Mail className="h-6 w-6" style={{ color: "#4e6137" }} />
                   <div>
-                    <p className="font-semibold">WhatsApp</p>
-                    <p className="text-gray-600">Available for appointments and consultations</p>
+                    <p className="font-semibold">Email</p>
+                    <p className="text-gray-600">[Insert Email]</p>
                   </div>
                 </div>
               </div>
@@ -771,28 +735,22 @@ export default function AnkurMentalHealth() {
                 <h4 className="text-xl font-bold text-gray-900 mb-4">Visit Us</h4>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-6 w-6 text-orange-600 mt-1" />
+                    <MapPin className="h-6 w-6 mt-1" style={{ color: "#4e6137" }} />
                     <div>
-                      <p className="font-semibold">Mumbai</p>
+                      <p className="font-semibold">Opera House, Mumbai</p>
                       <p className="text-gray-600 text-sm">
-                        Dr. Popat's Polyclinic, 2nd Floor
-                        <br />
-                        534 Bombay Mutual Terrace, Sandhurst Bridge
-                        <br />
-                        Opera House, Mumbai – 400007
+                        Dr. Popat's Polyclinic, 2nd Floor, 534 Bombay Mutual Terrace, Sandhurst Bridge, Opera House,
+                        Mumbai – 400007
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-6 w-6 text-orange-600 mt-1" />
+                    <MapPin className="h-6 w-6 mt-1" style={{ color: "#4e6137" }} />
                     <div>
-                      <p className="font-semibold">Thane</p>
+                      <p className="font-semibold">Thane West, Maharashtra</p>
                       <p className="text-gray-600 text-sm">
-                        Spectrum Clinic, Vineeta Apartments
-                        <br />
-                        Gokhale Rd, Near Malhar Cinema
-                        <br />
-                        Prashant Nagar, Naupada, Thane West – 400602
+                        Spectrum Clinic, Vineeta Apartments, Gokhale Rd, Near Malhar Cinema, Prashant Nagar, Naupada,
+                        Thane West – 400602
                       </p>
                     </div>
                   </div>
@@ -800,32 +758,116 @@ export default function AnkurMentalHealth() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h3>
-              <p className="text-gray-600 mb-6">Choose your preferred method to get in touch:</p>
+            <div
+              style={{ backgroundColor: "#f3f5f1" }}
+              className="p-8 rounded-2xl border"
+              style={{ borderColor: "#4e6137" }}
+            >
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
 
-              <div className="space-y-4">
-                <Button onClick={handleWhatsAppClick} className="w-full bg-orange-600 hover:bg-orange-700 text-lg py-6">
-                  <MessageCircle className="h-6 w-6 mr-3" />
-                  Start WhatsApp Conversation
-                </Button>
-
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <input
+                    type="text"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2"
+                    style={{
+                      borderColor: "#4e6137",
+                      focusRingColor: "#4e6137",
+                    }}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input
+                    type="email"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2"
+                    style={{
+                      borderColor: "#4e6137",
+                      focusRingColor: "#4e6137",
+                    }}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                  <input
+                    type="tel"
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2"
+                    style={{
+                      borderColor: "#4e6137",
+                      focusRingColor: "#4e6137",
+                    }}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea
+                    rows={4}
+                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2"
+                    style={{
+                      borderColor: "#4e6137",
+                      focusRingColor: "#4e6137",
+                    }}
+                  ></textarea>
+                </div>
                 <Button
-                  onClick={handleCallClick}
-                  variant="outline"
-                  className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 text-lg py-6 bg-transparent"
+                  type="submit"
+                  className="w-full text-lg py-3"
+                  style={{
+                    backgroundColor: "#4e6137",
+                    color: "white",
+                  }}
+                  onMouseEnter={(e) => (e.target.style.backgroundColor = "#3d4d2a")}
+                  onMouseLeave={(e) => (e.target.style.backgroundColor = "#4e6137")}
                 >
-                  <Phone className="h-6 w-6 mr-3" />
-                  Call: 98693-78751
+                  Send Message
                 </Button>
+              </form>
 
-                <div className="text-center pt-4">
-                  <p className="text-sm text-gray-500">
-                    Ready to start your healing journey? We're here to support you every step of the way.
-                  </p>
+              <div className="mt-6 text-center">
+                <p className="text-gray-600 mb-4">Or reach out directly:</p>
+                <div className="flex space-x-2">
+                  <Button
+                    onClick={handleWhatsAppClick}
+                    className="flex-1"
+                    style={{
+                      backgroundColor: "#4e6137",
+                      color: "white",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.backgroundColor = "#3d4d2a")}
+                    onMouseLeave={(e) => (e.target.style.backgroundColor = "#4e6137")}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    WhatsApp
+                  </Button>
+                  <Button
+                    onClick={handleCallClick}
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                    style={{
+                      borderColor: "#4e6137",
+                      color: "#4e6137",
+                    }}
+                  >
+                    <Phone className="h-4 w-4 mr-2" />
+                    Call Now
+                  </Button>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Emergency Notice */}
+          <div className="mt-12 bg-red-50 border border-red-200 rounded-lg p-6">
+            <h4 className="font-bold text-red-800 mb-2">Emergency Support</h4>
+            <p className="text-red-700 text-sm mb-3">
+              If you are experiencing thoughts of self-harm or suicide, please do not wait. Visit the nearest hospital
+              or mental health facility, ideally accompanied by a trusted family member or friend.
+            </p>
+            <p className="text-red-700 text-sm">
+              You can also reach out to <strong>Tele MANAS – India's National Mental Health Helpline at 14416</strong>{" "}
+              for free, confidential, 24/7 support.
+            </p>
           </div>
         </div>
       </section>
@@ -836,14 +878,19 @@ export default function AnkurMentalHealth() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Sprout className="h-8 w-8 text-orange-300" />
+                <img
+                  src="/images/ankur-logo.png"
+                  alt="Ankur Logo"
+                  className="h-8 w-8 object-contain filter brightness-0 invert"
+                />
                 <div>
                   <span className="text-2xl font-bold">Ankur</span>
                   <p className="text-orange-200 text-sm">Mental Health Services</p>
                 </div>
               </div>
               <p className="text-orange-100">
-                Nurturing growth and healing with compassionate, evidence-based psychological services.
+                Heal. Nurture. Grow. — Supporting individuals, families, and communities with compassionate,
+                evidence-based mental health care.
               </p>
             </div>
 
@@ -852,29 +899,29 @@ export default function AnkurMentalHealth() {
               <ul className="space-y-2 text-orange-200">
                 <li>
                   <a href="#about" className="hover:text-orange-300 transition-colors">
-                    About Mrudula
+                    About Us
                   </a>
                 </li>
                 <li>
                   <a href="#services" className="hover:text-orange-300 transition-colors">
-                    Services
+                    Our Services
                   </a>
                 </li>
                 <li>
-                  <a href="#training" className="hover:text-orange-300 transition-colors">
-                    Training & Internship
+                  <a href="#conditions" className="hover:text-orange-300 transition-colors">
+                    Conditions We Support
                   </a>
                 </li>
                 <li>
                   <a href="#contact" className="hover:text-orange-300 transition-colors">
-                    Contact
+                    Contact Us
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Methods</h4>
+              <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
               <div className="space-y-3">
                 <Button
                   onClick={handleWhatsAppClick}
@@ -882,7 +929,7 @@ export default function AnkurMentalHealth() {
                   className="text-orange-200 hover:text-orange-300 p-0 h-auto justify-start"
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
-                  WhatsApp: 98693-78751
+                  WhatsApp: 9869378751
                 </Button>
                 <br />
                 <Button
@@ -891,7 +938,7 @@ export default function AnkurMentalHealth() {
                   className="text-orange-200 hover:text-orange-300 p-0 h-auto justify-start"
                 >
                   <Phone className="h-4 w-4 mr-2" />
-                  Call: 98693-78751
+                  Call: 9869378751
                 </Button>
               </div>
             </div>
@@ -899,7 +946,9 @@ export default function AnkurMentalHealth() {
 
           <div className="border-t border-orange-800 mt-8 pt-8 text-center text-orange-200">
             <p>&copy; 2024 Ankur Mental Health Services. All rights reserved.</p>
-            <p className="text-sm mt-2">Founded by Mrudula Joshi - Licensed Clinical Psychologist</p>
+            <p className="text-sm mt-2">
+              Founded by Mrudula Joshi - Clinical Psychologist | Privacy Policy | Cancellation & Appointment Policy
+            </p>
           </div>
         </div>
       </footer>
