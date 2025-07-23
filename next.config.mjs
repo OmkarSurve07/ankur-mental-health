@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  allowedDevOrigins: ['*'],
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -10,8 +11,6 @@ const nextConfig = {
     unoptimized: true,
   },
   devIndicators: false,
-  // Optional: for external tools like ngrok during dev
-  // allowedDevOrigins: ['https://your-ngrok-url.ngrok-free.app'],
 }
 
 export default nextConfig

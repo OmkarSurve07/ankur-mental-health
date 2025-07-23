@@ -30,7 +30,7 @@ export default function AnkurMentalHealth() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img
-                src="/images/ankur-logo.png"
+                src="/images/ankur white.jpeg"
                 alt="Ankur Mental Health Services Logo"
                 className="h-12 w-12 object-contain"
               />
@@ -80,9 +80,9 @@ export default function AnkurMentalHealth() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="flex items-center space-x-3 mb-6">
-                <img src="/images/ankur-logo.png" alt="Ankur Logo" className="h-10 w-10 object-contain" />
-                <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 text-lg px-4 py-2 font-cormorant font-semibold">
+              <div className="flex items-center space-x-5 mb-6">
+                <img src="/images/ankur white 1.jpeg" alt="Ankur Logo" className="h-20 w-20 object-contain" />
+                <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 text-xl px-5 py-2 font-cormorant font-semibold tracking-wide">
                   Heal. Nurture. Grow.
                 </Badge>
               </div>
@@ -126,11 +126,11 @@ export default function AnkurMentalHealth() {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="/placeholder.svg?height=600&width=500"
-                alt="Mental Health Support - Ankur Services"
-                className="rounded-2xl shadow-2xl"
-              />
+            <img
+              src="/images/sample-image.jpg"
+              alt="Cozy Therapeutic Space - Ankur Mental Health Services"
+              className="h-[600px] w-[500px] object-cover rounded-2xl shadow-2xl"
+            />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-orange-200">
                 <div className="flex items-center space-x-2 mb-2">
                   <Users className="h-6 w-6 text-orange-600" />
@@ -216,7 +216,7 @@ export default function AnkurMentalHealth() {
                 </div>
                 <div className="flex justify-center">
                   <img
-                    src="/images/ankur-logo.png"
+                    src="/images/ankur white 1.jpeg"
                     alt="Ankur - Growth and Healing"
                     className="h-48 w-48 object-contain"
                   />
@@ -920,9 +920,9 @@ export default function AnkurMentalHealth() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img
-                  src="/images/ankur-logo.png"
+                  src="/images/ankur white 3.jpeg"
                   alt="Ankur Logo"
-                  className="h-8 w-8 object-contain filter brightness-0 invert"
+                  className="h-8 w-8 object-contain"
                 />
                 <div>
                   <span className="text-2xl font-bold font-cormorant">Ankur</span>
