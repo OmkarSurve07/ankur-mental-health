@@ -92,6 +92,7 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
+        glacial: ['"Glacial Indifference"', 'sans-serif'],
         cormorant: ["var(--font-cormorant)", "serif"],
       },
     },
