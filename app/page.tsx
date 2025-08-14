@@ -130,9 +130,9 @@ export default function AnkurMentalHealth() {
             </div>
             <div className="relative">
             <img
-              src="/images/sample-image.jpg"
+              src="/images/cover_photo.jpg"
               alt="Cozy Therapeutic Space - Ankur Mental Health Services"
-              className="h-[600px] w-[500px] object-cover rounded-2xl shadow-2xl"
+              className="w-full max-w-sm h-auto object-cover rounded-2xl shadow-xl"
             />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-orange-200">
                 <div className="flex items-center space-x-2 mb-2">
