@@ -81,7 +81,7 @@ export default function AnkurMentalHealth() {
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
             <div>
               <div className="flex justify-center mb-8">
                 <img src="/images/ankur white 3.jpeg" alt="Ankur Logo" className="h-40 w-40 object-contain" />
@@ -233,7 +233,7 @@ export default function AnkurMentalHealth() {
             <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-2xl p-8">
               <div className="text-center mb-6">
                 <h3 className="text-3xl font-bold text-[#764b36] font-cormorant">
-                  Founded by Mrudula Joshi
+                  Found by Mrudula Joshi
                 </h3>
                 <h4 className="text-xl font-bold text-[#764b36] mb-2 font-cormorant">
                   Clinical Psychologist | Psychotherapist | Trainer | Suicide Prevention Expert
@@ -995,7 +995,7 @@ export default function AnkurMentalHealth() {
           <div className="border-t border-orange-800 mt-8 pt-8 text-center text-orange-200">
             <p className="font-cormorant">&copy; 2024 Ankur Mental Health Services. All rights reserved.</p>
             <p className="text-sm mt-2 font-cormorant">
-              Founded by Mrudula Joshi - Clinical Psychologist | Privacy Policy | Cancellation & Appointment Policy
+              Found by Mrudula Joshi - Clinical Psychologist | Privacy Policy | Cancellation & Appointment Policy
             </p>
           </div>
         </div>
