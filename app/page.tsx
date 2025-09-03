@@ -84,7 +84,7 @@ export default function AnkurMentalHealth() {
           <div className="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
             <div>
               <div className="flex justify-center mb-8">
-                <img src="/images/ankur white 3.jpeg" alt="Ankur Logo" className="h-40 w-40 object-contain" />
+                <img src="/images/ankur_logo_3-removebg-preview.png" alt="Ankur Logo" className="h-40 w-40 object-contain" />
                 {/* <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 text-xl px-5 py-2 font-cormorant font-semibold tracking-wide">
                   Heal. Nurture. Grow.
                 </Badge> */}
@@ -92,7 +92,7 @@ export default function AnkurMentalHealth() {
               <h1 className="text-4xl lg:text-6xl font-bold text-[#764b36] mb-6 font-cormorant">
                 Mental Health Care as Human as it is Professional
               </h1>
-              <p className="text-sm text-[#C1734D] mb-6 font-glacial">
+              <p className="text-l text-[#C1734D] mb-6 font-glacial">
                 At Ankur, we believe that mental health care must be grounded in empathy, guided by evidence, and
                 attuned to the diverse experiences that shape our emotional lives.
               </p>
@@ -193,7 +193,7 @@ export default function AnkurMentalHealth() {
             <h2 className="text-3xl lg:text-4xl font-bold text-[#764b36] mb-4 font-cormorant">
               About Ankur Mental Health Services
             </h2>
-            <p className="text-sm text-[#C1734D] max-w-4xl mx-auto font-glacial">
+            <p className="text-l text-[#C1734D] max-w-4xl mx-auto font-glacial">
               We exist for one purpose: to support individuals, families, and communities in navigating life's emotional
               landscapes with clarity, compassion, and courage.
             </p>
@@ -205,12 +205,12 @@ export default function AnkurMentalHealth() {
               <h3 className="text-4xl font-bold text-[#764b36] mb-6 font-cormorant">Our Story</h3>
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <p className="text-sm text-[#C1734D] mb-4 leading-relaxed font-glacial">
+                  <p className="text-l text-[#C1734D] mb-4 leading-relaxed font-glacial">
                     The word "Ankur" means sprout — a symbol of new beginnings, quiet resilience, and the potential for
                     growth even in unlikely soil. This metaphor captures what we offer at Ankur: the space and support
                     to heal at your own pace, in your own way, with professional guidance you can trust.
                   </p>
-                  <p className="text-sm text-[#C1734D] leading-relaxed font-glacial">
+                  <p className="text-l text-[#C1734D] leading-relaxed font-glacial">
                     Ankur was born from years of working with children, adolescents, families, and adults navigating
                     emotional difficulties, school pressures, trauma, life transitions, grief, parenting fatigue, and
                     mental illness. Over time, it became clear that people don't just need answers — they need
@@ -241,7 +241,7 @@ export default function AnkurMentalHealth() {
                 <p className="text-sm text-[#C1734D] font-medium mb-4 font-glacial">
                   Over 13 years of experience in therapy, assessment, training, and suicide prevention
                 </p>
-                <p className="text-sm text-[#C1734D] leading-relaxed font-glacial">
+                <p className="text-l text-[#C1734D] leading-relaxed font-glacial">
                   Ankur brings together a multidisciplinary team of skilled professionals — including therapists,
                   psychiatrists, special educators, and mental health trainers — all committed to offering accessible,
                   ethical, and culturally sensitive care.
@@ -252,11 +252,11 @@ export default function AnkurMentalHealth() {
 
           {/* Our Values - OLIVE GREEN ACCENT */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center font-cormorant">Our Values</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-8 text-center font-cormorant">Our Values</h3>
             <div className="space-y-6">
               {/* Top row - 3 cards */}
               <div className="grid md:grid-cols-3 gap-6">
-                <Card className="border-orange-200">
+                <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
                   <CardHeader>
                     <Shield className="h-8 w-8 text-orange-600 mb-2" />
                     <CardTitle className="text-orange-700 font-cormorant">Safety First</CardTitle>
@@ -269,7 +269,7 @@ export default function AnkurMentalHealth() {
                   </CardContent>
                 </Card>
 
-                <Card style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
+                <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl" style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
                   <CardHeader>
                     <Heart className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
                     <CardTitle style={{ color: "#4e6137" }} className="font-cormorant">
@@ -283,7 +283,7 @@ export default function AnkurMentalHealth() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-orange-200">
+                <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
                   <CardHeader>
                     <Brain className="h-8 w-8 text-orange-600 mb-2" />
                     <CardTitle className="text-orange-700 font-cormorant">Rooted & Evolving</CardTitle>
@@ -299,7 +299,7 @@ export default function AnkurMentalHealth() {
 
               {/* Bottom row - 2 cards centered */}
               <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <Card style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
+                <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl" style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}>
                   <CardHeader>
                     <Award className="h-8 w-8 mb-2" style={{ color: "#4e6137" }} />
                     <CardTitle style={{ color: "#4e6137" }} className="font-cormorant">
@@ -314,7 +314,7 @@ export default function AnkurMentalHealth() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-orange-200">
+                <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
                   <CardHeader>
                     <Users className="h-8 w-8 text-orange-600 mb-2" />
                     <CardTitle className="text-orange-700 font-cormorant">Mental Health for All</CardTitle>
@@ -342,7 +342,7 @@ export default function AnkurMentalHealth() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Individual Therapy */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+            <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
               <CardHeader>
                 <Heart className="h-8 w-8 text-orange-600 mb-2" />
                 <CardTitle className="text-orange-700 font-cormorant">Individual Therapy</CardTitle>
@@ -382,7 +382,7 @@ export default function AnkurMentalHealth() {
 
             {/* Child & Adolescent Support */}
             <Card
-              className="hover:shadow-lg transition-shadow"
+              className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl"
               style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
             >
               <CardHeader>
@@ -435,7 +435,7 @@ export default function AnkurMentalHealth() {
             </Card>
 
             {/* Psychological Assessments - OLIVE GREEN ACCENT */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+            <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
               <CardHeader>
                 <Brain className="h-8 w-8 text-orange-600 mb-2" />
                 <CardTitle className="text-orange-700 font-cormorant">Psychological Assessments</CardTitle>
@@ -475,7 +475,7 @@ export default function AnkurMentalHealth() {
 
             {/* Family & Marital Therapy */}
             <Card
-              className="hover:shadow-lg transition-shadow"
+              className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl"
               style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
             >
               <CardHeader>
@@ -527,7 +527,7 @@ export default function AnkurMentalHealth() {
             </Card>
 
             {/* Support Groups */}
-            <Card className="border-orange-200 hover:shadow-lg transition-shadow">
+            <Card className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl">
               <CardHeader>
                 <Users className="h-8 w-8 text-orange-600 mb-2" />
                 <CardTitle className="text-orange-700 font-cormorant">Support Groups</CardTitle>
@@ -566,7 +566,7 @@ export default function AnkurMentalHealth() {
 
             {/* Training & Supervision - OLIVE GREEN ACCENT */}
             <Card
-              className="hover:shadow-lg transition-shadow"
+              className="border-orange-200 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 rounded-xl"
               style={{ backgroundColor: "#f3f5f1", borderColor: "#4e6137" }}
             >
               <CardHeader>
