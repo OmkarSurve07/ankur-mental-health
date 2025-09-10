@@ -89,13 +89,25 @@ export default function AnkurMentalHealth() {
                   Heal. Nurture. Grow.
                 </Badge> */}
               </div>
+              {/* New tagline / intro */}
               <h1 className="text-4xl lg:text-6xl font-bold text-[#764b36] mb-6 font-cormorant">
-                Mental Health Care as Human as it is Professional
+                Hope, rooted in science
               </h1>
               <p className="text-l text-[#C1734D] mb-6 font-glacial">
-                At Ankur, we believe that mental health care must be grounded in empathy, guided by evidence, and
-                attuned to the diverse experiences that shape our emotional lives.
+                Ankur means a new beginning — a symbol of hope, healing, and growth. At
+                <span className="font-semibold"> Ankur Mental Health Services</span>, we
+                blend evidence-based care with compassion to nurture minds and transform
+                lives.
               </p>
+
+        {/* <h1 className="text-4xl lg:text-6xl font-bold text-[#764b36] mb-6 font-cormorant">
+          Mental Health Care as Human as it is Professional
+        </h1>
+        <p className="text-l text-[#C1734D] mb-6 font-glacial">
+          At Ankur, we believe that mental health care must be grounded in empathy,
+          guided by evidence, and attuned to the diverse experiences that shape our
+          emotional lives.
+        </p> */}
               <div className="flex items-center space-x-4 mb-8">
                 <div className="flex items-center space-x-1">
                   <Award className="h-5 w-5 text-orange-600" />
