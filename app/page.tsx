@@ -39,21 +39,21 @@ export default function AnkurMentalHealth() {
                 style={{
                   textShadow: '2px 2px 6px rgba(0, 0, 0, 0.15)',
                 }}>Ankur</span>
-                <p className="text-xm text-[#C1734D] font-medium font-cormorant leading-none">Heal. Nurture. Grow.</p>
+                <p className="text-xm text-[#9B4922] font-medium font-cormorant leading-none">Heal. Nurture. Grow.</p>
               </div>
             </div>
 
             <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-[#643618] hover:text-[#C1734D] transition-colors font-cormorant text-lg">
+              <a href="#about" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 About
               </a>
-              <a href="#services" className="text-[#643618] hover:text-[#C1734D] transition-colors font-cormorant text-lg">
+              <a href="#services" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 Services
               </a>
-              <a href="#conditions" className="text-[#643618] hover:text-[#C1734D] transition-colors font-cormorant text-lg">
+              <a href="#conditions" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 Conditions
               </a>
-              <a href="#contact" className="text-[#643618] hover:text-[#C1734D] transition-colors font-cormorant text-lg">
+              <a href="#contact" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 Contact
               </a>
             </nav>
@@ -93,7 +93,7 @@ export default function AnkurMentalHealth() {
               <h1 className="text-4xl lg:text-6xl font-bold text-[#764b36] mb-6 font-cormorant">
                 Hope, rooted in science
               </h1>
-              <p className="text-l text-[#C1734D] mb-6 font-glacial">
+              <p className="text-l text-[#9B4922] mb-6 font-glacial">
                 Ankur means a new beginning — a symbol of hope, healing, and growth. At
                 <span className="font-semibold"> Ankur Mental Health Services</span>, we
                 blend evidence-based care with compassion to nurture minds and transform
@@ -103,7 +103,7 @@ export default function AnkurMentalHealth() {
         {/* <h1 className="text-4xl lg:text-6xl font-bold text-[#764b36] mb-6 font-cormorant">
           Mental Health Care as Human as it is Professional
         </h1>
-        <p className="text-l text-[#C1734D] mb-6 font-glacial">
+        <p className="text-l text-[#9B4922] mb-6 font-glacial">
           At Ankur, we believe that mental health care must be grounded in empathy,
           guided by evidence, and attuned to the diverse experiences that shape our
           emotional lives.
@@ -205,7 +205,7 @@ export default function AnkurMentalHealth() {
             <h2 className="text-3xl lg:text-4xl font-bold text-[#764b36] mb-4 font-cormorant">
               About Ankur Mental Health Services
             </h2>
-            <p className="text-l text-[#C1734D] max-w-4xl mx-auto font-glacial">
+            <p className="text-l text-[#9B4922] max-w-4xl mx-auto font-glacial">
               We exist for one purpose: to support individuals, families, and communities in navigating life's emotional
               landscapes with clarity, compassion, and courage.
             </p>
@@ -217,12 +217,12 @@ export default function AnkurMentalHealth() {
               <h3 className="text-4xl font-bold text-[#764b36] mb-6 font-cormorant">Our Story</h3>
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <p className="text-l text-[#C1734D] mb-4 leading-relaxed font-glacial">
+                  <p className="text-l text-[#9B4922] mb-4 leading-relaxed font-glacial">
                     The word "Ankur" means sprout — a symbol of new beginnings, quiet resilience, and the potential for
                     growth even in unlikely soil. This metaphor captures what we offer at Ankur: the space and support
                     to heal at your own pace, in your own way, with professional guidance you can trust.
                   </p>
-                  <p className="text-l text-[#C1734D] leading-relaxed font-glacial">
+                  <p className="text-l text-[#9B4922] leading-relaxed font-glacial">
                     Ankur was born from years of working with children, adolescents, families, and adults navigating
                     emotional difficulties, school pressures, trauma, life transitions, grief, parenting fatigue, and
                     mental illness. Over time, it became clear that people don't just need answers — they need
@@ -250,10 +250,10 @@ export default function AnkurMentalHealth() {
                 <h4 className="text-xl font-bold text-[#764b36] mb-2 font-cormorant">
                   Clinical Psychologist | Psychotherapist | Trainer | Suicide Prevention Expert
                 </h4>
-                <p className="text-sm text-[#C1734D] font-medium mb-4 font-glacial">
+                <p className="text-sm text-[#9B4922] font-medium mb-4 font-glacial">
                   Over 13 years of experience in therapy, assessment, training, and suicide prevention
                 </p>
-                <p className="text-l text-[#C1734D] leading-relaxed font-glacial">
+                <p className="text-l text-[#9B4922] leading-relaxed font-glacial">
                   Ankur brings together a multidisciplinary team of skilled professionals — including therapists,
                   psychiatrists, special educators, and mental health trainers — all committed to offering accessible,
                   ethical, and culturally sensitive care.
@@ -274,7 +274,7 @@ export default function AnkurMentalHealth() {
                     <CardTitle className="text-orange-700 font-cormorant">Safety First</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#C1734D] font-cormorant">
+                    <p className="text-[#9B4922] font-cormorant">
                       A therapeutic relationship is sacred. We protect client confidentiality and emotional safety at
                       all times.
                     </p>
@@ -301,7 +301,7 @@ export default function AnkurMentalHealth() {
                     <CardTitle className="text-orange-700 font-cormorant">Rooted & Evolving</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#C1734D] font-cormorant">
+                    <p className="text-[#9B4922] font-cormorant">
                       We stay informed by research, while remaining sensitive to the evolving needs of individuals and
                       communities.
                     </p>
@@ -332,7 +332,7 @@ export default function AnkurMentalHealth() {
                     <CardTitle className="text-orange-700 font-cormorant">Mental Health for All</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#C1734D] font-cormorant">
+                    <p className="text-[#9B4922] font-cormorant">
                       We are committed to mental health awareness, inclusion, and reducing stigma — one conversation at
                       a time.
                     </p>
@@ -349,7 +349,7 @@ export default function AnkurMentalHealth() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#764b36] mb-4 font-cormorant">Our Services</h2>
-            <p className="text-xl text-[#C1734D] font-cormorant">Comprehensive. Personalised. Rooted in Care.</p>
+            <p className="text-xl text-[#9B4922] font-cormorant">Comprehensive. Personalised. Rooted in Care.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -360,11 +360,11 @@ export default function AnkurMentalHealth() {
                 <CardTitle className="text-orange-700 font-cormorant">Individual Therapy</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#C1734D] mb-4 font-cormorant">
+                <p className="text-[#9B4922] mb-4 font-cormorant text-l">
                   For children, adolescents, adults, and older adults, tailored to your unique emotional and
                   psychological needs.
                 </p>
-                <ul className="text-sm text-[#C1734D] space-y-1 mb-4 font-cormorant">
+                <ul className="text-sm text-[#9B4922] space-y-1 mb-4 font-cormorant">
                   <li>• Anxiety, low mood, and stress</li>
                   <li>• Trauma and grief</li>
                   <li>• Low self-worth and self-doubt</li>
@@ -404,7 +404,7 @@ export default function AnkurMentalHealth() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4 font-cormorant">
+                <p className="text-gray-700 mb-4 font-cormorant text-l">
                   We work closely with children, teens, and their families using Play Therapy and age-appropriate
                   approaches.
                 </p>
@@ -453,11 +453,11 @@ export default function AnkurMentalHealth() {
                 <CardTitle className="text-orange-700 font-cormorant">Psychological Assessments</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#C1734D] mb-4 font-cormorant">
+                <p className="text-[#9B4922] mb-4 font-cormorant text-l">
                   Detailed, standardized assessments offering insights into cognitive, emotional, and behavioural
                   functioning.
                 </p>
-                <ul className="text-sm text-[#C1734D] space-y-1 mb-4 font-cormorant">
+                <ul className="text-sm text-[#9B4922] space-y-1 mb-4 font-cormorant">
                   <li>• IQ & Cognitive Profiling</li>
                   <li>• Learning Disabilities (LD)</li>
                   <li>• ADHD & Autism Spectrum</li>
@@ -497,7 +497,7 @@ export default function AnkurMentalHealth() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4 font-cormorant">
+                <p className="text-gray-700 mb-4 font-cormorant text-l">
                   We help families and couples navigate difficult dynamics with structure and empathy.
                 </p>
                 <ul className="text-sm text-gray-600 space-y-1 mb-4 font-cormorant">
@@ -545,10 +545,10 @@ export default function AnkurMentalHealth() {
                 <CardTitle className="text-orange-700 font-cormorant">Support Groups</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#C1734D] mb-4 font-cormorant">
+                <p className="text-[#9B4922] mb-4 font-cormorant text-l">
                   Healing in community. Safe, therapist-led groups for shared healing, insight, and growth.
                 </p>
-                <ul className="text-sm text-[#C1734D] space-y-1 mb-4 font-cormorant">
+                <ul className="text-sm text-[#9B4922] space-y-1 mb-4 font-cormorant">
                   <li>• Anxiety and depression support</li>
                   <li>• Grief and loss processing</li>
                   <li>• New mothers and postpartum adjustment</li>
@@ -588,7 +588,7 @@ export default function AnkurMentalHealth() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4 font-cormorant">
+                <p className="text-gray-700 mb-4 font-cormorant text-l">
                   We are committed to developing ethical and skilled mental health professionals.
                 </p>
                 <ul className="text-sm text-gray-600 space-y-1 mb-4 font-cormorant">
@@ -637,7 +637,7 @@ export default function AnkurMentalHealth() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#764b36] mb-4 font-cormorant">Conditions We Support</h2>
-            <p className="text-xl text-[#C1734D] font-cormorant">Carefully assessed. Thoughtfully supported.</p>
+            <p className="text-xl text-[#9B4922] font-cormorant">Carefully assessed. Thoughtfully supported.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -647,8 +647,8 @@ export default function AnkurMentalHealth() {
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">Neurodevelopmental Disorders</h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">Neurodevelopmental Disorders</h4>
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Learning Disability (LD)</li>
                     <li>• Attention-Deficit/Hyperactivity Disorder (ADHD)</li>
                     <li>• Autism Spectrum-related indicators</li>
@@ -656,10 +656,10 @@ export default function AnkurMentalHealth() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">
                     Emotional & Behavioural Challenges
                   </h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Anxiety and fearfulness</li>
                     <li>• Academic stress and performance anxiety</li>
                     <li>• Aggression, irritability, or sudden withdrawal</li>
@@ -670,8 +670,8 @@ export default function AnkurMentalHealth() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">Adjustment & Family Stress</h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">Adjustment & Family Stress</h4>
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Parent–child relationship difficulties</li>
                     <li>• Separation, divorce, or changes in caregiving</li>
                     <li>• Relocation, school changes, and social transition</li>
@@ -687,8 +687,8 @@ export default function AnkurMentalHealth() {
 
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">Mood & Emotional Health</h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">Mood & Emotional Health</h4>
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Depression and low mood</li>
                     <li>• Generalized Anxiety and worry</li>
                     <li>• Social Anxiety</li>
@@ -698,8 +698,8 @@ export default function AnkurMentalHealth() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">Women's Mental Health</h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">Women's Mental Health</h4>
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Premenstrual mood changes</li>
                     <li>• Postpartum emotional challenges</li>
                     <li>• Fertility-related distress</li>
@@ -709,10 +709,10 @@ export default function AnkurMentalHealth() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant">
+                  <h4 className="font-semibold text-orange-700 mb-2 font-cormorant text-l">
                     Life Transitions & Relationships
                   </h4>
-                  <ul className="text-[#C1734D] text-sm space-y-1 font-cormorant">
+                  <ul className="text-[#9B4922] text-m space-y-1 font-cormorant">
                     <li>• Marriage, parenthood, retirement, relocation</li>
                     <li>• Relationship difficulties and family communication</li>
                     <li>• Self-worth, identity struggles</li>
@@ -765,7 +765,7 @@ export default function AnkurMentalHealth() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#764b36] mb-4 font-cormorant">Let's Begin Together</h2>
-            <p className="text-xl text-[#C1734D] font-cormorant">
+            <p className="text-xl text-[#9B4922] font-cormorant">
               Whether you or your child are facing confusion, emotional stress, or long-term challenges — we're here to
               help.
             </p>
