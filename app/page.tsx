@@ -232,7 +232,7 @@ export default function AnkurMentalHealth() {
                 </div>
                 <div className="flex justify-center">
                   <img
-                    src="/images/ankur white 1.jpeg"
+                    src="/images/ankur_logo_a.png"
                     alt="Ankur - Growth and Healing"
                     className="h-48 w-48 object-contain"
                   />
