@@ -56,49 +56,49 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "PsychologicalClinic",
-              name: "Ankur Mental Health Services",
-              image: "https://ankurmentalhealth.com/images/ankur_logo_3-removebg-preview.png",
-              url: "https://ankurmentalhealth.com/",
-              telephone: "+91-9869378751",
-              address: [
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "Opera House, South Mumbai",
-                  addressLocality: "Mumbai",
-                  addressRegion: "MH",
-                  postalCode: "400004",
-                  addressCountry: "IN",
-                },
-                {
-                  "@type": "PostalAddress",
-                  streetAddress: "Thane West",
-                  addressLocality: "Thane",
-                  addressRegion: "MH",
-                  postalCode: "400601",
-                  addressCountry: "IN",
-                },
-              ],
-              sameAs: [
-                "https://www.instagram.com/ankurmentalhealth",
-                // "https://www.facebook.com/ankurmentalhealth",
-              ],
-              description:
-                "Professional therapy, counselling, and psychological assessments for children, adolescents, adults, couples, and families in South Mumbai & Thane.",
-              founder: {
-                "@type": "Person",
-                name: "Mrudula Joshi",
-                jobTitle: "Psychologist",
-                description: "Psychologist with 13+ years of experience.",
-              },
-            }),
-          }}
-        />
+       <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      name: "Ankur Mental Health Services",
+      image: "https://ankurmentalhealth.com/logo.png",
+      url: "https://ankurmentalhealth.com/",
+      telephone: "+91-9869378751",
+      address: [
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Opera House, South Mumbai",
+          addressLocality: "Mumbai",
+          addressRegion: "MH",
+          postalCode: "400004",
+          addressCountry: "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          streetAddress: "Thane West",
+          addressLocality: "Thane",
+          addressRegion: "MH",
+          postalCode: "400601",
+          addressCountry: "IN"
+        }
+      ],
+      sameAs: [
+        "https://www.instagram.com/ankurmentalhealth",
+        "https://www.facebook.com/ankurmentalhealth"
+      ],
+      description: "Professional therapy, counselling, and psychological assessments for children, adolescents, adults, couples, and families in South Mumbai & Thane.",
+      founder: {
+        "@type": "Person",
+        name: "Mrudula Joshi",
+        jobTitle: "Psychologist",
+        description: "Psychologist with 13+ years of experience"
+      }
+    }),
+  }}
+/>
+
       </head>
       <body className={`${cormorantGaramond.variable} font-cormorant`}>
         {children}
