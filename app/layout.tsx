@@ -63,7 +63,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "PsychologicalClinic",
               name: "Ankur Mental Health Services",
-              image: "https://ankurmentalhealth.com/logo.png",
+              image: "https://ankurmentalhealth.com/images/ankur_logo_3-removebg-preview.png",
               url: "https://ankurmentalhealth.com/",
               telephone: "+91-9869378751",
               address: [
@@ -86,7 +86,7 @@ export default function RootLayout({
               ],
               sameAs: [
                 "https://www.instagram.com/ankurmentalhealth",
-                "https://www.facebook.com/ankurmentalhealth",
+                // "https://www.facebook.com/ankurmentalhealth",
               ],
               description:
                 "Professional therapy, counselling, and psychological assessments for children, adolescents, adults, couples, and families in South Mumbai & Thane.",
