@@ -1,10 +1,10 @@
 "use client"
 
-import { Phone, MessageCircle, Users, Brain, Heart, Shield, Award, BookOpen, MapPin, Clock, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Award, BookOpen, Brain, Clock, Heart, Mail, MapPin, MessageCircle, Phone, Shield, Users } from "lucide-react"
 import { FaWhatsapp } from 'react-icons/fa'
+
 
 export default function AnkurMentalHealth() {
   const whatsappNumber = "919869378751"
@@ -19,9 +19,10 @@ export default function AnkurMentalHealth() {
 
   const handleCallClick = () => {
     window.location.href = `tel:${phoneNumber}`
-  }
+	}
 
-  return (
+	return (
+		<>
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 font-cormorant">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-orange-200">
@@ -1012,6 +1013,7 @@ export default function AnkurMentalHealth() {
           </div>
         </div>
       </footer>
-    </div>
+			</div>
+			</>
   )
 }
