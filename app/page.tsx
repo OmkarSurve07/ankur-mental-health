@@ -783,13 +783,13 @@ export default function AnkurMentalHealth() {
                     <p className="text-gray-600 font-cormorant">9869378751</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-4">
+                {/* <div className="flex items-center space-x-4">
                   <Mail className="h-6 w-6" style={{ color: "#4e6137" }} />
                   <div>
                     <p className="font-semibold font-cormorant">Email</p>
                     <p className="text-gray-600 font-cormorant">[Insert Email]</p>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="mt-8">
