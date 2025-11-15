@@ -976,6 +976,16 @@ export default function AnkurMentalHealth() {
                     Contact Us
                   </a>
                 </li>
+                <li>
+                  <a href="/privacy-policy" className="hover:text-orange-300 transition-colors font-cormorant">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="/cancellation-policy" className="hover:text-orange-300 transition-colors font-cormorant">
+                    Cancellation Policy
+                  </a>
+                </li>
               </ul>
             </div>
 
