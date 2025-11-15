@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond } from "next/font/google";
 import './globals.css';
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Psychologist in South Mumbai & Thane | Ankur Mental Health",
@@ -56,48 +57,64 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "MedicalClinic",
-      name: "Ankur Mental Health Services",
-      image: "https://ankurmentalhealth.com/logo.png",
-      url: "https://ankurmentalhealth.com/",
-      telephone: "+91-9869378751",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Opera House, South Mumbai",
-          addressLocality: "Mumbai",
-          addressRegion: "MH",
-          postalCode: "400004",
-          addressCountry: "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "Thane West",
-          addressLocality: "Thane",
-          addressRegion: "MH",
-          postalCode: "400601",
-          addressCountry: "IN"
-        }
-      ],
-      sameAs: [
-        "https://www.instagram.com/ankurmentalhealth",
-        "https://www.facebook.com/ankurmentalhealth"
-      ],
-      description: "Professional therapy, counselling, and psychological assessments for children, adolescents, adults, couples, and families in South Mumbai & Thane.",
-      founder: {
-        "@type": "Person",
-        name: "Mrudula Joshi",
-        jobTitle: "Psychologist",
-        description: "Psychologist with 13+ years of experience"
-      }
-    }),
-  }}
-/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalClinic",
+              name: "Ankur Mental Health Services",
+              image: "https://ankurmentalhealth.com/logo.png",
+              url: "https://ankurmentalhealth.com/",
+              telephone: "+91-9869378751",
+              address: [
+                {
+                  "@type": "PostalAddress",
+                  streetAddress: "Opera House, South Mumbai",
+                  addressLocality: "Mumbai",
+                  addressRegion: "MH",
+                  postalCode: "400004",
+                  addressCountry: "IN"
+                },
+                {
+                  "@type": "PostalAddress",
+                  streetAddress: "Thane West",
+                  addressLocality: "Thane",
+                  addressRegion: "MH",
+                  postalCode: "400601",
+                  addressCountry: "IN"
+                }
+              ],
+              sameAs: [
+                "https://www.instagram.com/ankurmentalhealth",
+                "https://www.facebook.com/ankurmentalhealth"
+              ],
+              description: "Professional therapy, counselling, and psychological assessments for children, adolescents, adults, couples, and families in South Mumbai & Thane.",
+              founder: {
+                "@type": "Person",
+                name: "Mrudula Joshi",
+                jobTitle: "Psychologist",
+                description: "Psychologist with 13+ years of experience"
+              }
+            }),
+          }}
+        />
+
+        {/* GOOGLE ANALYTICS - Added here */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-67R2CV9L8G"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-67R2CV9L8G', {
+              page_path: window.location.pathname + window.location.search,
+            });
+          `}
+        </Script>
 
       </head>
       <body className={`${cormorantGaramond.variable} font-cormorant`}>
