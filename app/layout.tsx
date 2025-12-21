@@ -6,7 +6,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Psychologist in South Mumbai & Thane | Ankur Mental Health",
   description:
-    "Trusted psychologists in South Mumbai & Thane. Therapy, counselling, and assessments for children, adults, couples & families. Call 9869378751 today.",
+    "Trusted psychologists in South Mumbai & Thane. Therapy, counselling, and assessments for children, adults, couples & families. Call 9769378751 today.",
   applicationName: "Ankur Mental Health Services",
   generator: "Next.js",
   keywords: [
@@ -66,7 +66,7 @@ export default function RootLayout({
               name: "Ankur Mental Health Services",
               image: "https://ankurmentalhealth.com/logo.png",
               url: "https://ankurmentalhealth.com/",
-              telephone: "+91-9869378751",
+              telephone: "+91-9769378751",
               address: [
                 {
                   "@type": "PostalAddress",

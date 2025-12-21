@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
             <p>
               If you have any questions about this Privacy Policy, please contact us at:
               <br />
-              <strong>Phone/WhatsApp:</strong> <a href="tel:+919869378751" className="text-orange-600 hover:underline">98693 78751</a>
+              <strong>Phone/WhatsApp:</strong> <a href="tel:+919769378751" className="text-orange-600 hover:underline">97693 78751</a>
             </p>
           </div>
 

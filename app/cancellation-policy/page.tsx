@@ -133,7 +133,7 @@ export default function CancellationPolicy() {
                   className="flex items-center space-x-3 text-[#9B4922] hover:text-orange-700 transition-colors"
                 >
                   <Phone className="h-6 w-6" />
-                  <span className="font-medium font-cormorant">9869378751</span>
+                  <span className="font-medium font-cormorant">9769378751</span>
                 </a>
                 <span className="hidden sm:block text-gray-400">|</span>
                 <a
