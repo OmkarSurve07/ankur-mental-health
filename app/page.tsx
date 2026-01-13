@@ -54,6 +54,9 @@ export default function AnkurMentalHealth() {
               <a href="#conditions" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 Conditions
               </a>
+              <a href="/products" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
+                Products
+              </a>
               <a href="#contact" className="text-[#643618] hover:text-[#9B4922] transition-colors font-cormorant text-lg">
                 Contact
               </a>
