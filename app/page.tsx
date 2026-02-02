@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Award, BookOpen, Brain, Clock, Heart, Mail, MapPin, MessageCircle, Phone, Shield, Users } from "lucide-react"
@@ -7,6 +8,13 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 
 export default function AnkurMentalHealth() {
+  const [showOffers, setShowOffers] = useState(false)
+
+  const openPayment = (url: string) => {
+    window.open(url, "_blank")
+    setShowOffers(false)
+  }
+
   const whatsappNumber = "919769378751"
   const phoneNumber = "+91-9769378751"
 
@@ -81,29 +89,96 @@ export default function AnkurMentalHealth() {
 
         {/* ================= WEBINAR BANNER ================= */}
         <section
-          onClick={() => window.open("https://rzp.io/l/ankur-webinar-jan", "_blank")}
+          onClick={() => setShowOffers(true)}
           className="cursor-pointer bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 transition-all"
         >
-          <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="max-w-7xl mx-auto px-4 py-4 md:py-5">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
 
               {/* Left Content */}
-              <div>
-                <p className="text-white font-cormorant text-lg md:text-xl font-semibold">
-                  🧠 Live Webinar: Understanding Anxiety & Emotional Regulation
+              <div className="space-y-1">
+                <h2 className="text-white font-cormorant text-lg md:text-xl font-semibold">
+                  Rewire: Parent Workshop on Screen Addiction in Children
+                </h2>
+
+                <p className="text-orange-100 text-sm font-cormorant">
+                  Evidence-based strategies to reduce screen dependence and build healthier habits
                 </p>
-                <p className="text-orange-100 text-sm font-cormorant mt-1">
-                  With Ankur Mental Health Services · Limited Seats · Online
+
+                <p className="text-orange-200 text-xs md:text-sm font-cormorant">
+                  📅 15 Feb 2026 · ⏰ 10:00 AM – 12:00 PM (IST) · 💻 Online (Live)
                 </p>
               </div>
 
               {/* Right CTA */}
-              <div className="bg-white text-orange-700 font-cormorant font-semibold px-6 py-2 rounded-full shadow-md">
-                Register Now →
+              <div className="bg-white text-orange-700 font-cormorant font-semibold px-5 py-2.5 rounded-full shadow-md whitespace-nowrap">
+                Book Your Spot →
               </div>
 
             </div>
           </div>
+
+          {/* ================= OFFER MODAL ================= */}
+          {showOffers && (
+            <div
+              className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center"
+              onClick={() => setShowOffers(false)}
+            >
+              <div
+                className="bg-white rounded-2xl p-6 w-[90%] max-w-md space-y-4 text-center"
+                onClick={(e) => e.stopPropagation()}
+              >
+
+                {/* Modal Header */}
+                <div className="space-y-1">
+                  <h3 className="text-xl font-cormorant font-semibold">
+                    Rewire – Parent Workshop
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    15 Feb 2026 · 10:00 AM – 12:00 PM (IST)
+                  </p>
+                </div>
+
+                <hr />
+
+                {/* Early Bird */}
+                <button
+                  onClick={() => openPayment("https://rzp.io/l/ankur-earlybird")}
+                  className="w-full border rounded-xl px-4 py-3 hover:bg-orange-50 text-left"
+                >
+                  <p className="font-semibold">🎯 Early Bird Offer</p>
+                  <p className="text-sm text-gray-600">
+                    ₹999 · Valid till 7 Feb 2026
+                  </p>
+                </button>
+
+                {/* Group Booking */}
+                <button
+                  onClick={() => openPayment("https://rzp.io/l/ankur-group")}
+                  className="w-full border rounded-xl px-4 py-3 hover:bg-orange-50 text-left"
+                >
+                  <p className="font-semibold">👨‍👩‍👧 Group Booking</p>
+                  <p className="text-sm text-gray-600">
+                    Flat 10% discount for 2 or more participants
+                  </p>
+                </button>
+
+                {/* Urgency */}
+                <p className="text-xs text-gray-500 pt-1">
+                  Seats are limited. Early registration recommended.
+                </p>
+
+                {/* Cancel */}
+                <button
+                  onClick={() => setShowOffers(false)}
+                  className="w-full text-sm text-gray-500 pt-2"
+                >
+                  Cancel
+                </button>
+
+              </div>
+            </div>
+          )}
         </section>
 
 
