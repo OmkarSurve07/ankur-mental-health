@@ -143,7 +143,7 @@ export default function AnkurMentalHealth() {
 
                 {/* Early Bird */}
                 <button
-                  onClick={() => openPayment("https://rzp.io/l/ankur-earlybird")}
+                  onClick={() => openPayment("https://rzp.io/rzp/anukurmetalhealth")}
                   className="w-full border rounded-xl px-4 py-3 hover:bg-orange-50 text-left"
                 >
                   <p className="font-semibold">🎯 Early Bird Offer</p>
@@ -154,7 +154,7 @@ export default function AnkurMentalHealth() {
 
                 {/* Group Booking */}
                 <button
-                  onClick={() => openPayment("https://rzp.io/l/ankur-group")}
+                  onClick={() => openPayment("https://rzp.io/rzp/anukurmetalhealthgp")}
                   className="w-full border rounded-xl px-4 py-3 hover:bg-orange-50 text-left"
                 >
                   <p className="font-semibold">👨‍👩‍👧 Group Booking</p>
