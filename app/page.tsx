@@ -146,10 +146,24 @@ export default function AnkurMentalHealth() {
                   onClick={() => openPayment("https://rzp.io/rzp/anukurmetalhealth")}
                   className="w-full border rounded-xl px-4 py-3 hover:bg-orange-50 text-left"
                 >
-                  <p className="font-semibold">🎯 Early Bird Offer</p>
-                  <p className="text-sm text-gray-600">
-                    ₹999 · Valid till 7 Feb 2026
-                  </p>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-semibold">🎯 Early Bird Offer</p>
+
+                      <p className="text-sm text-gray-600">
+                        <span className="line-through mr-2">₹1199</span>
+                        <span className="text-orange-600 font-semibold">₹999</span>
+                      </p>
+
+                      <p className="text-xs text-gray-500">
+                        Individual plan · Valid till 9 Feb 2026
+                      </p>
+                    </div>
+
+                    <span className="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full">
+                      Save ₹200
+                    </span>
+                  </div>
                 </button>
 
                 {/* Group Booking */}
