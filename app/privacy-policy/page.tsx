@@ -6,26 +6,6 @@ import Link from "next/link"
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 font-cormorant">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b border-orange-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center space-x-3">
-            <img
-              src="/images/ankur_white.jpeg"
-              alt="Ankur Logo"
-              className="h-10 w-10 object-contain"
-            />
-            <span className="text-2xl font-semibold text-[#764b36]">Ankur</span>
-          </Link>
-          <Button asChild variant="ghost">
-            <Link href="/" className="flex items-center space-x-2 text-[#764b36] hover:text-[#9B4922]">
-              <ArrowLeft className="h-5 w-5" />
-              <span>Back to Home</span>
-            </Link>
-          </Button>
-        </div>
-      </header>
-
       {/* Privacy Policy Content */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-orange-100">

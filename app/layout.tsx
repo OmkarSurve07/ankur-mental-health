@@ -2,6 +2,11 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond } from "next/font/google";
 import './globals.css';
 import Script from "next/script";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop"
+
+
 
 export const metadata: Metadata = {
   title: "Psychologist in South Mumbai & Thane | Ankur Mental Health",
@@ -118,7 +123,17 @@ export default function RootLayout({
 
       </head>
       <body className={`${cormorantGaramond.variable} font-cormorant`}>
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <Header />
+
+          {/* Main page content */}
+          <main className="flex-grow">
+            {children}
+          </main>
+
+          <Footer />
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );
