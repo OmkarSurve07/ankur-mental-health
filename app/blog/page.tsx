@@ -12,6 +12,15 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Psychologist"
           excerpt="If your child becomes unusually upset when screens are taken away, constantly asks for a phone or tablet, or seems bored without digital stimulation,"
         />
+
+        <BlogCard
+          title="How Excessive Screen Time Affects Child Behaviour and Emotional Regulation"
+          slug="screen-time-child-behaviour"
+          image="/images/blogs/screen-time-behaviour.jpg"
+          author="Ishana Dixit, Psychology Intern"
+          reviewer="Mrudula Joshi, Psychologist"
+          excerpt="Many parents and educators notice behavioural changes alongside increased screen use, such as more frequent tantrums, irritability, difficulty with transitions, or emotional withdrawal."
+        />
       </div>
     </main>
   )
