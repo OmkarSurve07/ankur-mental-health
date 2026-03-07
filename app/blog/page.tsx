@@ -21,6 +21,15 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Psychologist"
           excerpt="Many parents and educators notice behavioural changes alongside increased screen use, such as more frequent tantrums, irritability, difficulty with transitions, or emotional withdrawal."
         />
+
+        <BlogCard
+          title="Indian Women’s Mental Health: Cultural Pressures, Emotional Labour, Anxiety, and Pathways to Healing"
+          slug="indian-womens-mental-health"
+          image="/images/blogs/indian-womens-mental-health.png"
+          author="Ishana Dixit, Psychology Intern"
+          reviewer="Mrudula Joshi, Psychologist"
+          excerpt="Across many Indian households, women are often praised for their ability to manage everything. While these roles are culturally valued, they can also carry an invisible psychological cost."
+        />
       </div>
     </main>
   )
