@@ -30,6 +30,14 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Psychologist"
           excerpt="Across many Indian households, women are often praised for their ability to manage everything. While these roles are culturally valued, they can also carry an invisible psychological cost."
         />
+        <BlogCard
+          title="Early Signs of Autism in Children: Symptoms, Causes & How Parents Can Help"
+          slug="early-signs-of-autism"
+          image="/images/blogs/autism-children.jpg"
+          author="Avni Joshi, Psychology Intern"
+          reviewer="Mrudula Joshi, Psychologist"
+          excerpt="Autism Spectrum Disorder (ASD) affects how a child communicates, interacts socially, and experiences the world. Early identification and support can make a significant difference."
+        />
       </div>
     </main>
   )
