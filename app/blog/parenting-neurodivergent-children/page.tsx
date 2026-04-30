@@ -1,6 +1,6 @@
 export default function BlogDetail() {
     return (
-        <article className="max-w-3xl mx-auto px-4 py-12 text-gray-800">
+        <article className="max-w-3xl mx-auto px-4 py-12 text-gray-800 text-[16px] md:text-[18px] leading-8">
 
             {/* Title */}
             <h1 className="text-4xl font-bold text-[#764b36] leading-snug">
@@ -9,30 +9,18 @@ export default function BlogDetail() {
 
             {/* Author */}
             <div className="mt-4 text-sm text-gray-600 space-y-1">
-                <p><strong>Author:</strong> Aaditi Kadam, Intern Psychologist</p>
+                <p><strong>Author:</strong> Aaditi Kadam, Psychology Intern</p>
                 <p><strong>Reviewed by:</strong> Mrudula Joshi, Senior Psychologist</p>
             </div>
 
             {/* Intro */}
             <section className="mt-8 space-y-4">
                 <p>
-                    Learn effective parenting strategies for neurodivergent children, including emotional regulation, sensory support,
-                    and behaviour management. Expert-backed guide for parents.
-                </p>
-
-                <p>
                     You’re at a restaurant having dinner with your family and friends. Everything is going well, until it isn’t. Your
                     child is overwhelmed and has a meltdown. You have tried everything to make them calm down, nothing is working.
-                </p>
-
-                <p>
-                    While you do love your child a lot; at that moment you’re also very, very tired. As a parent, you may feel guilty for
-                    wanting a break from your child after such episodes. You shouldn't.
-                </p>
-
-                <p>
-                    It is important to realise that as a parent, you are probably not doing anything wrong, you just need a different way
-                    of seeing and understanding your child’s world.
+                    While you do love your child a lot; at that moment you’re also very, very tired. As a parent, you may feel guilty
+                    for wanting a break from your child after such episodes. You shouldn't. It is important to realise that as a parent,
+                    you are probably not doing anything wrong, you just need a different way of seeing and understanding your child’s world.
                 </p>
             </section>
 
