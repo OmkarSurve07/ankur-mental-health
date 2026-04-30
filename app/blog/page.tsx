@@ -38,6 +38,14 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Psychologist"
           excerpt="Autism Spectrum Disorder (ASD) affects how a child communicates, interacts socially, and experiences the world. Early identification and support can make a significant difference."
         />
+        <BlogCard
+          title="Parenting Neurodivergent Children: Strategies for Emotional Regulation, Behaviour & Support"
+          slug="parenting-neurodivergent-children"
+          image="/images/blogs/neurodivergent-parenting.jpg"
+          author="Aaditi Kadam, Intern Psychologist"
+          reviewer="Mrudula Joshi, Senior Psychologist"
+          excerpt="Parenting neurodivergent children requires understanding, patience, and the right strategies to support emotional regulation, behaviour, and overall development."
+        />
       </div>
     </main>
   )
