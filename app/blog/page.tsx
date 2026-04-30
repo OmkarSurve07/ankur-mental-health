@@ -41,7 +41,7 @@ export default function BlogPage() {
         <BlogCard
           title="Parenting Neurodivergent Children: Strategies for Emotional Regulation, Behaviour & Support"
           slug="parenting-neurodivergent-children"
-          image="/images/blogs/neurodivergent-parenting.jpg"
+          image="/images/blogs/neurodivergent-parenting.jpeg"
           author="Aaditi Kadam, Intern Psychologist"
           reviewer="Mrudula Joshi, Senior Psychologist"
           excerpt="Parenting neurodivergent children requires understanding, patience, and the right strategies to support emotional regulation, behaviour, and overall development."
