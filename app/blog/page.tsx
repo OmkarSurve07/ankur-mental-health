@@ -46,6 +46,27 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Senior Psychologist"
           excerpt="Parenting neurodivergent children requires understanding, patience, and the right strategies to support emotional regulation, behaviour, and overall development."
         />
+        <BlogCard
+          title="Therapy Myths Debunked: What Therapy Really Is, How It Works & When to Seek Help"
+          slug="therapy-myths-debunked"
+          image="/images/blogs/therapy-myths-debunked.png"
+          author="Aaditi Kadam, Intern Psychologist"
+          reviewer={
+            <>
+              Mrudula Joshi, Senior Psychologist <br />
+              Shravani Kuthe, Clinical Psychology Student
+            </>
+          }
+          excerpt="You’ve been feeling off for a while, restless yet functioning normally. Therapy can feel intimidating because of myths, doubts, and fear of judgment. Understanding what therapy really is can help you take the first step toward emotional wellbeing."
+        />
+        <BlogCard
+          title="Mental Health Awareness Month: Why It Matters in India"
+          slug="mental-health-awareness-month-india"
+          image="/images/blogs/mental-health-awareness-india.png"
+          author="Shravani Kuthe, Clinical Psychology Student"
+          reviewer="Mrudula Joshi, Psychologist"
+          excerpt="Mental Health Awareness Month highlights the importance of emotional wellbeing, reducing stigma, and encouraging people to seek support. In India, conversations around mental health are becoming increasingly important in schools, workplaces, and families."
+        />
       </div>
     </main>
   )
