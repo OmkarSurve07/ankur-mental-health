@@ -67,7 +67,29 @@ export default function BlogPage() {
           reviewer="Mrudula Joshi, Psychologist"
           excerpt="Mental Health Awareness Month highlights the importance of emotional wellbeing, reducing stigma, and encouraging people to seek support. In India, conversations around mental health are becoming increasingly important in schools, workplaces, and families."
         />
+        <BlogCard
+          title="When Anxiety Stops Being “Just Stress”: Understanding Anxiety Disorders"
+          slug="understanding-anxiety-disorders"
+          image="/images/blogs/anxiety-disorders.png"
+          author="Shravani Kuthe, Clinical Psychology Student"
+          reviewer="Mrudula Joshi, Senior Psychologist"
+          excerpt="Stress and anxiety are often used interchangeably, but anxiety disorders go beyond everyday stress. Understanding the signs, emotional impact, and when to seek professional support can help individuals recognize anxiety before it begins affecting daily life."
+        />
+        <BlogCard
+          title="10 Evidence-Based Coping Strategies for Anxiety and Stress Management"
+          slug="coping-strategies-for-anxiety-and-stress"
+          image="/images/blogs/anxiety-stress-management.png"
+          author="Avni Joshi, Psychology Intern"
+          reviewer={
+            <>
+              Mrudula Joshi, Senior Psychologist <br />
+              Shravani Kuthe, Psychology Student
+            </>
+          }
+          excerpt="Feeling emotionally overwhelmed, mentally exhausted, or constantly stressed has become increasingly common in today’s fast-paced world. Learning evidence-based coping strategies can help manage anxiety, reduce stress, and improve emotional well-being."
+        />
       </div>
+
     </main>
   )
 }
