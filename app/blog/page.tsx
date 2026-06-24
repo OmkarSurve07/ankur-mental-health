@@ -88,6 +88,59 @@ export default function BlogPage() {
           }
           excerpt="Feeling emotionally overwhelmed, mentally exhausted, or constantly stressed has become increasingly common in today’s fast-paced world. Learning evidence-based coping strategies can help manage anxiety, reduce stress, and improve emotional well-being."
         />
+        <BlogCard
+          title="Men’s Mental Health in India: Breaking the Silence and Stigma"
+          slug="mens-mental-health-india"
+          image="/images/blogs/mens-mental-health-india.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kuthe, Clinical Psychology Student <br />
+              Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Men’s mental health often remains hidden behind expectations of strength, emotional suppression, and societal pressure. Understanding the stigma around men’s mental health is the first step toward creating healthier conversations and encouraging support."
+        />
+        <BlogCard
+          title="How Fathers Influence Emotional Development In Children"
+          slug="fathers-influence-emotional-development"
+          image="/images/blogs/fathers-emotional-development.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kuthe, Clinical Psychology Student <br />
+              Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Fathers play a powerful role in shaping how children understand, express, and regulate emotions. Emotional presence, support, and healthy role modelling can influence a child’s confidence, resilience, relationships, and overall emotional development."
+        />
+        <BlogCard
+          title="Setting Healthy Boundaries at Work: Tips for Work-Life Balance and Mental Wellbeing"
+          slug="healthy-boundaries-at-work"
+          image="/images/blogs/work-life-boundaries.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kuthe, Clinical Psychology Student <br />
+              Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Constantly answering work messages after hours, working weekends, or taking on more than you can manage can lead to stress and burnout. Healthy workplace boundaries help protect your mental wellbeing while maintaining productivity."
+        />
+        <BlogCard
+          title="Mid-Year Mental Health Check-In: Reflect, Reset, and Refocus Your Mind"
+          slug="mid-year-mental-health-check-in"
+          image="/images/blogs/mid-year-mental-health-check-in.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kuthe, Clinical Psychology Student <br />
+              Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="As the year reaches its halfway point, it can be helpful to pause and reflect on your mental wellbeing. A mid-year mental health check-in offers an opportunity to understand your emotions, manage stress more effectively, and move forward with greater clarity and balance."
+        />
+
       </div>
 
     </main>
