@@ -140,7 +140,44 @@ export default function BlogPage() {
           }
           excerpt="As the year reaches its halfway point, it can be helpful to pause and reflect on your mental wellbeing. A mid-year mental health check-in offers an opportunity to understand your emotions, manage stress more effectively, and move forward with greater clarity and balance."
         />
-
+        <BlogCard
+          title="Emotional Independence: How to Become Emotionally Self-Reliant"
+          slug="emotional-independence"
+          image="/images/blogs/emotional-independence.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Dr. Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Emotional independence is about understanding your emotions, trusting yourself, and developing the confidence to handle life's challenges without becoming overly dependent on others for emotional stability."
+        />
+        <BlogCard
+          title="Identity Formation in Adolescence: Challenges, Mental Health and Ways to Support Teens"
+          slug="identity-formation-in-adolescence"
+          image="/images/blogs/identity-formation-adolescence.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kunthe, Psychology Student <br />
+              Dr. Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Adolescence is an important stage of identity development. Understanding the challenges teenagers face can help parents, educators, and caregivers provide the support they need to build a healthy sense of self."
+        />
+        <BlogCard
+          title="Healthy Family Boundaries: Understanding Family Dynamics and Mental Wellbeing"
+          slug="healthy-family-boundaries"
+          image="/images/blogs/healthy-family-boundaries.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer={
+            <>
+              Shravani Kunthe, Psychology Student <br />
+              Dr. Mrudula Joshi, Psychologist
+            </>
+          }
+          excerpt="Healthy family boundaries help create respectful relationships, emotional safety, and better communication. Understanding family dynamics can help individuals maintain their wellbeing while staying connected with their loved ones."
+        />
       </div>
 
     </main>
