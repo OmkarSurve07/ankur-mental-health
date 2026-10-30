@@ -5,6 +5,42 @@ export default function BlogPage() {
     <main className="max-w-7xl mx-auto px-4 py-12">
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         <BlogCard
+          title="Understanding the Emotional Needs of Children and How to Support Them"
+          slug="emotional-needs-of-children"
+          image="/images/blogs/emotional-needs-children.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer="Dr. Mrudula Joshi, Psychologist"
+          excerpt="From needing comfort and reassurance in early childhood to seeking validation and independence during adolescence, emotional needs change as children grow. Understanding these needs helps children feel safe, heard, valued, and emotionally resilient."
+        />
+
+        <BlogCard
+          title="Work, Pressure, and Identity: Mental Health Challenges Faced by Men Today"
+          slug="work-pressure-identity-men"
+          image="/images/blogs/work-pressure-identity-men.png"
+          author="Dhanvi N Deshmukh, Psychology Intern"
+          reviewer="Dr. Mrudula Joshi, Psychologist"
+          excerpt="Work often becomes more than a source of income — it shapes identity, self-worth, and how men see themselves. Exploring the pressure, expectations, and internal conflicts that impact men’s mental well-being."
+        />
+
+        <BlogCard
+          title="Stress vs Burnout: Key Differences, Signs, and When to Seek Help"
+          slug="stress-vs-burnout"
+          image="/images/blogs/stress-vs-burnout.jpg"
+          author="Sanika Pathare, Psychology Intern"
+          reviewer="Dr. Mrudula Joshi, Psychologist"
+          excerpt="Stress and burnout may look similar, but they are not the same. Knowing the difference, recognising the signs, and taking the right step can help you move towards healing, balance, and better mental wellbeing."
+        />
+
+        <BlogCard
+          title="Why the Festive Season Can Feel Lonely and How to Deal With It"
+          slug="festive-season-loneliness"
+          image="/images/blogs/festive-season-loneliness.jpg"
+          author="Sanika Pathare, Psychology Intern"
+          reviewer="Dr. Mrudula Joshi, Psychologist"
+          excerpt="The festive season can bring up feelings of longing and loneliness, especially when everyone else seems to have big plans. Here’s how to find warmth, connection, and hope — even in quiet moments."
+        />
+
+        <BlogCard
           title="Screen Addiction in Children: Early Signs, Brain Impact, and What Parents Can Do"
           slug="screen-addiction-in-children"
           image="/images/blogs/screen-addiction-children.jpg"
